@@ -2,7 +2,7 @@ flask==2.3.2
 flask-cors==4.0.0
 diffusers==0.19.3
 transformers==4.31.0
-torch==2.0.1
+torch==2.2.0  # PyTorch का लेटेस्ट वर्जन
 accelerate==0.21.0
 huggingface_hub==0.16.4
 gunicorn==21.2.0
