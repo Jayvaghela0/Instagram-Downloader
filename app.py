@@ -11,6 +11,9 @@ model_id = "stabilityai/stable-diffusion-2"
 pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16)
 pipe = pipe.to("cuda" if torch.cuda.is_available() else "cpu")
 
+@app.route('/')
+def home():
+    return "render is running."
 @app.route('/generate', methods=['POST'])
 def generate_image():
     # यूजर का टेक्स्ट इनपुट लें
